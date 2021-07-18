@@ -6,7 +6,7 @@ linkTitle: "创建企业空间、项目、账户和角色"
 weight: 2300
 ---
 
-本快速入门演示如何创建企业空间、角色和用户账户。同时，您将学习如何在企业空间中创建项目和 DevOps 项目，用于运行工作负载。完成本教程后，您将熟悉 KubeSphere 的多租户管理系统，并使用本教程中创建的资源（例如企业空间和帐号等）完成其他教程中的操作。
+本快速入门演示如何创建企业空间、角色和用户账户。同时，您将学习如何在企业空间中创建项目和 DevOps 工程，用于运行工作负载。完成本教程后，您将熟悉 KubeSphere 的多租户管理系统，并使用本教程中创建的资源（例如企业空间和帐号等）完成其他教程中的操作。
 
 ## 准备工作
 
@@ -39,7 +39,7 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 
    ![设置密码1](/images/docs/quickstart/create-workspaces-projects-accounts/设置密码1.png)
 
-2. 登录控制台后，点击左上角的**平台管理**，然后选择访问控制。
+2. 登录控制台后，点击左上角的**平台管理**，然后选择**访问控制**。
 
    ![访问控制](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/访问控制.jpg)
 
@@ -56,7 +56,7 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 内置角色由 KubeSphere 自动创建，无法编辑或删除。
    {{</ notice >}}
 
-3. 在**帐户管理**中，点击**创建**。在弹出窗口中,提供所有必要信息（带有*标记），然后在**角色**字段选择 users-manager。请参考下图示例.
+3. 在**帐户管理**中，点击**创建**。在弹出窗口中，提供所有必要信息（带有*标记），然后在**角色**字段选择 users-manager。请参考下图示例。
 
    ![创建帐户1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/创建帐户1.png)
 
@@ -87,7 +87,7 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 
    ![创建企业空间1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/创建企业空间1.png)
 
-2. 单击右侧的**创建**，将新企业空间命名为 `demo-workspace`,并将用户 `ws-admin` 设置为企业空间管理员，如下图所示：
+2. 单击右侧的**创建**，将新企业空间命名为 `demo-workspace`，并将用户 `ws-admin` 设置为企业空间管理员，如下图所示：
 
    ![完成创建企业空间](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/完成创建企业空间.jpg)
 
@@ -135,7 +135,7 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 
    ![查看项目](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/查看项目.jpg)
 
-4. 在项目的**概览**页面，默认情况下未设置项目配额。您可以点击**设置**并根据需要指定[资源请求和限制](../../workspace-administration/project-quotas/)（例如:CPU 和内存的限制分别设为 1 Core 和 1000 Gi）。
+4. 在项目的**概览**页面，默认情况下未设置项目配额。您可以点击**设置**并根据需要指定[资源请求和限制](../../workspace-administration/project-quotas/)（例如: CPU 和内存的限制分别设为 1 Core 和 1000 Gi）。
 
    ![项目概览1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/项目概览1.png)
 
@@ -187,7 +187,7 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 
    {{</ notice >}}
 
-4. 在**编辑权限**对话框中，设置角色权限(例如，选择**集群管理**)并单击**确定**。
+4. 在**编辑权限**对话框中，设置角色权限（例如，选择**集群管理**）并单击**确定**。
 
    {{< notice note >}}
 
@@ -222,7 +222,7 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 
    ![工程列表1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/工程列表1.png)
 
-4. 转到**工程管理**，然后选择**工程成员**。点击**邀请成员**授予 `project-regular` 用户 `operator` 的角色，允许其创建流水线和凭证。
+4. 转到**工程管理**，然后选择**项目成员**。点击**邀请成员**授予 `project-regular` 用户 `operator` 的角色，允许其创建流水线和凭证。
 
    ![邀请-devops-成员1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/邀请-devops-成员1.png)
 
