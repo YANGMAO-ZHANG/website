@@ -1,21 +1,21 @@
 ---
-title: "创建企业空间、项目、账户和角色"
-keywords: 'KubeSphere, Kubernetes, 多租户, 企业空间, 账户, 角色, 项目'
+title: "创建企业空间、项目、帐户和角色"
+keywords: 'KubeSphere, Kubernetes, 多租户, 企业空间, 帐户, 角色, 项目'
 description: '了解如何利用 KubeSphere 中的多租户功能在不同级别进行细粒度访问控制。'
-linkTitle: "创建企业空间、项目、账户和角色"
+linkTitle: "创建企业空间、项目、帐户和角色"
 weight: 2300
 ---
 
-本快速入门演示如何创建企业空间、角色和用户账户。同时，您将学习如何在企业空间中创建项目和 DevOps 工程，用于运行工作负载。完成本教程后，您将熟悉 KubeSphere 的多租户管理系统，并使用本教程中创建的资源（例如企业空间和帐号等）完成其他教程中的操作。
+本快速入门演示如何创建企业空间、角色和用户帐户。同时，您将学习如何在企业空间中创建项目和 DevOps 工程，用于运行工作负载。完成本教程后，您将熟悉 KubeSphere 的多租户管理系统，并使用本教程中创建的资源（例如企业空间和帐号等）完成其他教程中的操作。
 
 ## 准备工作
 
-KubeSphere需要安装在您的机器中。
+KubeSphere 需要安装在您的机器中。
 
 
 ## 预计时间
 
-大约15分钟。
+大约 15 分钟。
 
 ## 架构
 
@@ -56,7 +56,7 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 内置角色由 KubeSphere 自动创建，无法编辑或删除。
    {{</ notice >}}
 
-3. 在**帐户管理**中，点击**创建**。在弹出窗口中,提供所有必要信息（带有*标记），然后在**角色**字段选择 users-manager。请参考下图示例.
+3. 在**帐户管理**中，点击**创建**。在弹出窗口中,提供所有必要信息（带有 * 标记），然后在**角色**字段选择 users-manager。请参考下图示例。
 
    ![创建帐户1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/创建帐户1.png)
 
@@ -143,7 +143,7 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 
 5. 邀请 `project-regular` 至该项目，并授予该用户 `operator` 角色。请参考下图以了解具体步骤。
 
-   ![邀请成员至项目1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/邀请成员至项目1.pNg)
+   ![邀请成员至项目1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/邀请成员至项目1.png)
 
    {{< notice info >}}
    具有 `operator` 角色的用户是项目维护者，可以管理项目中除用户和角色以外的资源。
@@ -222,8 +222,8 @@ KubeSphere 的多租户系统分**三个**层级，即群集、企业空间和�
 
    ![工程列表1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/工程列表1.png)
 
-4. 转到**工程管理**，然后选择**项目成员**。点击**邀请成员**授予 `project-regular` 用户 `operator` 的角色，允许其创建流水线和凭证。
+4. 转到**工程管理**，然后选择**工程成员**。点击**邀请成员**授予 `project-regular` 用户 `operator` 的角色，允许其创建流水线和凭证。
 
    ![邀请-devops-成员1](/images/docs/zh-cn/quickstart/create-workspaces-projects-accounts/邀请-devops-成员1.png)
 
-至此，您已熟悉 kubeSphere 的多租户管理系统。在其他教程中，`project-regular` 帐户还将用于演示如何在项目或 DevOps 工程中创建应用程序和资源.
+至此，您已熟悉 kubeSphere 的多租户管理系统。在其他教程中，`project-regular` 帐户还将用于演示如何在项目或 DevOps 工程中创建应用程序和资源。
